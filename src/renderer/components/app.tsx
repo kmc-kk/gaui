@@ -2,7 +2,6 @@ import { ipcRenderer } from 'electron';
 import React, { useState, useEffect, useCallback } from 'react';
 import { Container, TextField } from '@material-ui/core';
 import { FILE_EVENTS, saveFile, FileInfoType } from '../../fileIO';
-import Menu from './menu';
 
 const openFileDialog = (): void => {
   ipcRenderer.send(FILE_EVENTS.OPEN_DIALOG);
@@ -56,11 +55,6 @@ const App: React.FC = () => {
 
   return (
     <Container>
-      <Menu
-        onFileOpen={openFileDialog}
-        onFileSave={handleFileSave}
-        onFileSaveAs={handleFileSaveAs}
-      />
       <TextField
         multiline
         fullWidth
