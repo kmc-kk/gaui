@@ -1,6 +1,6 @@
 /*
  * ATTENTION: The "eval" devtool has been used (maybe by default in mode: "development").
- * This devtool is not neither made for production nor for readable output files.
+ * This devtool is neither made for production nor for readable output files.
  * It uses "eval()" calls to create a separate source file in the browser devtools.
  * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
  * or disable the default devtool with "devtool: false".
@@ -36,7 +36,7 @@ eval("\r\nObject.defineProperty(exports, \"__esModule\", ({ value: true }));\r\n
   \***************************/
 /***/ ((module) => {
 
-eval("module.exports = require(\"electron\");;\n\n//# sourceURL=webpack:///external_%22electron%22?");
+module.exports = require("electron");;
 
 /***/ }),
 
@@ -46,7 +46,7 @@ eval("module.exports = require(\"electron\");;\n\n//# sourceURL=webpack:///exter
   \*********************/
 /***/ ((module) => {
 
-eval("module.exports = require(\"fs\");;\n\n//# sourceURL=webpack:///external_%22fs%22?");
+module.exports = require("fs");;
 
 /***/ })
 
